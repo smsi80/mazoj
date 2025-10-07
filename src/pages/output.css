@@ -220,6 +220,9 @@
   .-top-5 {
     top: calc(var(--spacing) * -5);
   }
+  .-top-7 {
+    top: calc(var(--spacing) * -7);
+  }
   .-top-8 {
     top: calc(var(--spacing) * -8);
   }
@@ -274,14 +277,23 @@
   .h-20 {
     height: calc(var(--spacing) * 20);
   }
+  .h-32 {
+    height: calc(var(--spacing) * 32);
+  }
   .h-screen {
     height: 100vh;
   }
   .w-5 {
     width: calc(var(--spacing) * 5);
   }
+  .w-16 {
+    width: calc(var(--spacing) * 16);
+  }
   .w-20 {
     width: calc(var(--spacing) * 20);
+  }
+  .w-32 {
+    width: calc(var(--spacing) * 32);
   }
   .w-\[90\%\] {
     width: 90%;
