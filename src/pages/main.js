@@ -5,6 +5,7 @@
     const confirmBtn = document.getElementById('confirmBtn');
     const formContainer = document.getElementById('formContainer');
     const navbar = document.getElementById('navbar');
+    const  navbarExtra=document.getElementById('navbarExtra');
     let selected = null;
 
     // رفتار انتخاب گزینه‌ها
@@ -32,5 +33,6 @@
     setTimeout(() => {
     formContainer.classList.add('hidden');
     navbar.classList.remove('hidden');
+        navbarExtra.classList.remove('hidden');
 }, 700);
 });

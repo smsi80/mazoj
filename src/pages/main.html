@@ -9,14 +9,14 @@
     <script src="https://kit.fontawesome.com/b1f76b1fb5.js" crossorigin="anonymous"></script>
 </head>
 
-<body class="flex flex-col justify-center items-center h-screen w-screen bg-gradient-to-br from-[#E8F1F2] to-[#4433B5] relative overflow-hidden">
+<body class="flex font-display flex-col justify-center items-center h-screen w-screen bg-gradient-to-br from-[#E8F1F2] to-[#4433B5] relative overflow-hidden">
 
 <!-- فرم اولیه -->
 <main id="formContainer"
       class="gap-5 backdrop-blur-lg bg-white/30 border border-[#6F4FBF]/30 shadow-[0_0_25px_rgba(111,79,191,0.2)] text-black flex flex-col justify-center items-center w-[90%] md:w-1/2 lg:w-1/3 rounded-3xl p-8 transition-all duration-700">
 
     <div class="flex flex-col gap-2 text-center">
-        <h1 class="text-xl text-[#3A2B73]/80 font-semibold">سلام و خوش‌آمدگویی ما را پذیرا باشید</h1>
+        <h1 class="text-xl text-[#3A2B73]/80 font-semibold ">سلام و خوش‌آمدگویی ما را پذیرا باشید</h1>
         <h2 class="text-xl text-[#3A2B73]/70">مازوجی عزیز</h2>
         <h3 class="text-[#3A2B73]/80 mt-2">برای ایجاد حساب کاربری خود انتخاب کنید:</h3>
     </div>
@@ -44,24 +44,27 @@
 </main>
 
 <!-- نو بار (در ابتدا مخفی) -->
+<div>
 <nav id="navbar"
-     class=" hidden fixed bottom-0  rounded-2xl right-0 left-0 h-16 bg-white/70 backdrop-blur-xl border-b border-[#6F4FBF]/30 shadow-lg flex justify-center items-center animate__animated animate__fadeInDown z-50">
+     class=" hidden z-50  absolute bottom-0  rounded-2xl right-0 left-0 h-16 bg-gradient-to-br from-[#E8F1F2] to-[#4433B5] backdrop-blur-xl border-b border-[#6F4FBF]/30 shadow-lg flex justify-center items-center animate__animated animate__fadeInDown ">
 
-    <ul class="flex justify-between items-center w-full max-w-4xl px-8 text-[#3A2B73]/80 font-semibold text-lg">
+    <ul class="flex justify-between items-center w-full max-w-4xl px-8 text-white font-semibold text-lg">
         <li class="hover:text-[#6F4FBF] cursor-pointer transition-all duration-200">زودم</li>
         <li class="hover:text-[#6F4FBF] cursor-pointer transition-all duration-200">مبلیز</li>
 
         <!-- لوگو وسط -->
         <li class="relative flex justify-center items-center">
             <img src="./logo.jpg" alt="MazoJ Logo"
-                 class="w-16 h-16 object-contain rounded-full  fixed -top-7 drop-shadow-[0_4px_8px_rgba(111,79,191,0.3)]" />
+                 class="w-16 h-16 object-contain aspect-square rounded-full  fixed -top-7 drop-shadow-[0_4px_8px_rgba(111,79,191,0.3)]" />
         </li>
 
-        <li class="hover:text-[#6F4FBF] cursor-pointer transition-all duration-200">بازمر</li>
-        <li class="hover:text-[#6F4FBF] cursor-pointer transition-all duration-200">زوم</li>
+        <li class="hover:text-[#6F4FBF] text-[#3A2B73]/80 cursor-pointer transition-all duration-200">بازمر</li>
+        <li class="hover:text-[#6F4FBF] text-[#3A2B73]/80 cursor-pointer transition-all duration-200">زوم</li>
     </ul>
-</nav>
 
+</nav>
+<div id="navbarExtra" class=" animate__animated animate__fadeInDown hidden bg-gradient-to-br from-[#E8F1F2] to-[#4433B5] w-full h-12 fixed left-0 right-0  bottom-10 rounded-t-full  z-0 "></div>
+</div>
 <script src="./main.js"></script>
 </body>
 </html>
