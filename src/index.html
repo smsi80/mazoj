@@ -1,68 +1,54 @@
 <!DOCTYPE html>
 <html dir="rtl" lang="fa">
-  <head>
-    <meta charset="UTF-8" />
+<head>
+    <meta charset="UTF-8">
+    <title>Manoj main</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./output.css" rel="stylesheet" />
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <script
-      src="https://kit.fontawesome.com/b1f76b1fb5.js"
-      crossorigin="anonymous"
+            src="https://kit.fontawesome.com/b1f76b1fb5.js"
+            crossorigin="anonymous"
     ></script>
-  </head>
-  <body class="bg-[#e8f1f2]">
-    <nav class="flex flex-col">
-      <!-- Pc-->
-      <div class="p-4 md:fixed md:inline font-bold text-lg text-white hidden">
-        <a
-          class="hover:bg-[#1B98E0] p-3 rounded-2xl duration-500"
-          href="./aut/Login.html"
-          >ورود</a
-        >
-      </div>
-      <div
-        class="h-min w-full bg-[#6F4FBF] md:flex flex-row justify-center items-center hidden"
-      >
-        <ul class="p-4 flex flex-row gap-4 font-bold text-lg text-white">
-          <li>
-            <a href="#" rel="noopener noreferrer">خانه</a>
-          </li>
-          <li><a href="#">درباره ما</a></li>
-          <li><a href="./contactus.html">ارتباط با ما</a></li>
-        </ul>
-      </div>
+</head>
+<body class="flex flex-col justify-center items-center h-screen w-screen bg-[#e8f1f2] relative overflow-hidden">
 
-      <!-- Mobile-->
-      <div class="md:hidden">
-        <i
-          id="openMenu"
-          class="fa-solid fa-bars p-2 text-5xl text-[#6F4FBF] cursor-pointer"
-        ></i>
+<!-- عکس تمام صفحه -->
+<img
+        alt="logo"
+        id="myImage"
+        class="animate__animated animate__backOutUp animate__delay-1s w-screen h-screen absolute top-0 left-0 z-50"
+        src="./pics/Gemini_Generated_Image_6475z46475z46475.png"
+>
 
-        <!-- بلاک منو -->
-        <div
-          id="menuBlock"
-          class="fixed top-0 right-0 h-screen w-1/4 bg-[#6F4FBF] rounded-l-4xl flex flex-col text-center items-center transform translate-x-full transition-transform duration-300 ease-in-out md:hidden"
-        >
-          <!-- دکمه بستن -->
-          <i
-            id="closeMenu"
-            class="fa-solid fa-xmark text-5xl p-2 text-white cursor-pointer self-start"
-          ></i>
+<!-- فرم (در ابتدا مخفی) -->
+<main id="formContainer"
+      class="bg-[#6F4FBF] text-white flex flex-row justify-center items-start h-2/4 w-3/4 rounded-2xl p-4 opacity-0 transition-opacity duration-700">
+    <form class="flex flex-col justify-center items-center gap-8 w-full">
+        <input class="rounded-md bg-[#583AA1] w-full text-center" placeholder="شماره تماس" type="number" name="phone">
 
-          <ul class="p-4 flex flex-col gap-4 font-bold text-lg text-white">
-            <li><a href="./aut/Login.html">ورود </a></li>
-            <li>
-              <a href="#" rel="noopener noreferrer">خانه</a>
-            </li>
-            <li><a href="#">درباره ما</a></li>
-            <li><a href="./contactus.html">ارتباط با ما</a></li>
-          </ul>
+        <input class="text-center rounded-md bg-[#583AA1] w-full" placeholder="کد ملی" type="number" name="snumber">
+
+        <input class="text-center rounded-md bg-[#583AA1] w-full" placeholder="رمز عبور" type="password" name="password">
+
+        <div class="w-full">
+            <button type="button" class="cursor-pointer rounded-md bg-[#583AA1] w-full p-4">دریافت کد</button>
         </div>
-      </div>
-    </nav>
-    <main></main>
-    <footer></footer>
+        <h2>ما به کنار هم همراه با مازوج</h2>
+    </form>
+</main>
 
-    <script src="./js.js"></script>
-  </body>
+<script>
+    const img = document.getElementById("myImage");
+    const formContainer = document.getElementById("formContainer");
+
+    img.addEventListener("animationend", () => {
+        img.remove(); // حذف عکس بعد از انیمیشن
+        formContainer.classList.add("opacity-100"); // نمایش فرم با fade-in
+    });
+</script>
+</body>
 </html>
