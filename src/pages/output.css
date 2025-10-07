@@ -213,8 +213,23 @@
   .bottom-0 {
     bottom: calc(var(--spacing) * 0);
   }
+  .bottom-5 {
+    bottom: calc(var(--spacing) * 5);
+  }
+  .bottom-6 {
+    bottom: calc(var(--spacing) * 6);
+  }
   .bottom-10 {
     bottom: calc(var(--spacing) * 10);
+  }
+  .bottom-14 {
+    bottom: calc(var(--spacing) * 14);
+  }
+  .bottom-\[22px\] {
+    bottom: 22px;
+  }
+  .bottom-\[24px\] {
+    bottom: 24px;
   }
   .left-0 {
     left: calc(var(--spacing) * 0);
@@ -442,9 +457,6 @@
   }
   .font-display {
     font-family: var(--font-display);
-  }
-  .font-sans {
-    font-family: var(--font-sans);
   }
   .text-2xl {
     font-size: var(--text-2xl);
