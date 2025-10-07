@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/b1f76b1fb5.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="bg-[#e8f1f2]">
+    <nav class="flex flex-col">
+      <!-- Pc-->
+      <div class="p-4 md:fixed md:inline font-bold text-lg text-white hidden">
+        <a
+          class="hover:bg-[#1B98E0] p-3 rounded-2xl duration-500"
+          href="./aut/Login.html"
+          >ورود</a
+        >
+      </div>
+      <div
+        class="h-min w-full bg-[#6F4FBF] md:flex flex-row justify-center items-center hidden"
+      >
+        <ul class="p-4 flex flex-row gap-4 font-bold text-lg text-white">
+          <li>
+            <a href="#" rel="noopener noreferrer">خانه</a>
+          </li>
+          <li><a href="#">درباره ما</a></li>
+          <li><a href="./contactus.html">ارتباط با ما</a></li>
+        </ul>
+      </div>
+
+      <!-- Mobile-->
+      <div class="md:hidden">
+        <i
+          id="openMenu"
+          class="fa-solid fa-bars p-2 text-5xl text-[#6F4FBF] cursor-pointer"
+        ></i>
+
+        <!-- بلاک منو -->
+        <div
+          id="menuBlock"
+          class="fixed top-0 right-0 h-screen w-1/4 bg-[#6F4FBF] rounded-l-4xl flex flex-col text-center items-center transform translate-x-full transition-transform duration-300 ease-in-out md:hidden"
+        >
+          <!-- دکمه بستن -->
+          <i
+            id="closeMenu"
+            class="fa-solid fa-xmark text-5xl p-2 text-white cursor-pointer self-start"
+          ></i>
+
+          <ul class="p-4 flex flex-col gap-4 font-bold text-lg text-white">
+            <li><a href="./aut/Login.html">ورود </a></li>
+            <li>
+              <a href="#" rel="noopener noreferrer">خانه</a>
+            </li>
+            <li><a href="#">درباره ما</a></li>
+            <li><a href="./contactus.html">ارتباط با ما</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main></main>
+    <footer></footer>
+
+    <script src="./js.js"></script>
+  </body>
+</html>
