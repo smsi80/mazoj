@@ -591,6 +591,9 @@
   .border-white {
     border-color: var(--color-white);
   }
+  .bg-\[\#5E4AA5\]\/30 {
+    background-color: color-mix(in oklab, #5E4AA5 30%, transparent);
+  }
   .bg-\[\#6F4FBF\] {
     background-color: #6F4FBF;
   }
