@@ -213,8 +213,8 @@
   .bottom-0 {
     bottom: calc(var(--spacing) * 0);
   }
-  .bottom-10 {
-    bottom: calc(var(--spacing) * 10);
+  .bottom-\[24px\] {
+    bottom: 24px;
   }
   .left-0 {
     left: calc(var(--spacing) * 0);
@@ -337,10 +337,6 @@
   .rounded-xl {
     border-radius: var(--radius-xl);
   }
-  .rounded-t-full {
-    border-top-left-radius: calc(infinity * 1px);
-    border-top-right-radius: calc(infinity * 1px);
-  }
   .border {
     border-style: var(--tw-border-style);
     border-width: 1px;
@@ -370,6 +366,9 @@
   }
   .bg-\[\#5E4AA5\]\/40 {
     background-color: color-mix(in oklab, #5E4AA5 40%, transparent);
+  }
+  .bg-\[\#4433B5\] {
+    background-color: #4433B5;
   }
   .bg-\[\#F3ECFF\] {
     background-color: #F3ECFF;
@@ -540,6 +539,11 @@
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
     transition-duration: var(--tw-duration, var(--default-transition-duration));
   }
+  .transition-colors {
+    transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+  }
   .transition-opacity {
     transition-property: opacity;
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
@@ -556,6 +560,10 @@
   .duration-700 {
     --tw-duration: 700ms;
     transition-duration: 700ms;
+  }
+  .duration-1000 {
+    --tw-duration: 1000ms;
+    transition-duration: 1000ms;
   }
   .outline-none {
     --tw-outline-style: none;
